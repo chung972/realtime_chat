@@ -42,9 +42,9 @@ io.on('connection', (socket)=>{
     the former is NOT sending any data. this is typical for whenever you want
     to DELETE something; also something to note, you can see that for 'clear',
     we are both LISTENING and EMITTING a 'clear' message. so, we are waiting
-    to hear from app.js for 'clear', and once heard, we go right back and EMITS
+    to hear from app.js for 'clear', and once heard, we go right back and EMIT
     to ALL the app.js's (that is, everyone who is connected to the same port) 
-    a message of 'clear'. the message that is listened for and emitted do not
+    a message of 'clear'. the message that is LISTENED FOR and EMITTED do not
     have to be the same (just look at socket.on('sendMsg'...). )
      */
 
