@@ -32,7 +32,7 @@ button.addEventListener('click', () => {
     // whatever file), what we want to do is EMIT a MESSAGE to io.js; that way,
     // io.js can then (assuming you have a socket.on(...) properly set up to 
     // accept the message being emitted), tell ALLLLL the instances of app.js
-    // that the send buttons was clicked. in this case, because the message
+    // that the send button was clicked. in this case, because the message
     // emitted in this event handler ALSO sends data (username, message, timestamp),
     // that data will be sent along to io.js and then disseminated to all app.js
     // instances. that is why a message will appear (basically) instantly for

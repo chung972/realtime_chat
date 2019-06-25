@@ -26,7 +26,7 @@ io.on('connection', (socket)=>{
     a proper "route" set up (that is, if we don't have a socket.on prepared
     to receive a SPECIFIC MESSAGE, that message will go unheard; this means
     that having no typos is a big deal).  io.js can be listening for as many
-    messages are it wants (and if you think about games, esp multiplayer ones,
+    messages as it wants (and if you think about games, esp multiplayer ones,
     there's gonna be a lot of messages that are listened for);
 
     an overview of the process is this: io.js has its ear to the ground, LISTENING
